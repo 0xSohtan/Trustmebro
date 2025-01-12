@@ -1,0 +1,383 @@
+.main-wrapper {
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  max-width: 1300px;
+  display: flex;
+}
+
+.header {
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 40px;
+  display: flex;
+}
+
+.footer {
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  display: flex;
+}
+
+.landing-section {
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  height: 80svh;
+  display: flex;
+  position: relative;
+}
+
+.body {
+  justify-content: center;
+  align-items: flex-start;
+  font-family: Schoolbell, sans-serif;
+  display: flex;
+}
+
+.footer-logo {
+  justify-content: center;
+  align-items: center;
+  width: 33%;
+  display: flex;
+}
+
+.footer-image {
+  width: 100px;
+}
+
+.footer-description {
+  text-align: center;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: 33%;
+  display: flex;
+}
+
+.description-text {
+  text-align: center;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.footer-links {
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: 33%;
+  display: flex;
+}
+
+.footer-heading {
+  margin-top: 0;
+  font-size: 30px;
+  line-height: 100%;
+}
+
+.footer-link {
+  color: #000;
+  font-size: 20px;
+  line-height: 24px;
+  text-decoration: none;
+}
+
+.landing-heading {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 20px;
+}
+
+.landing-image {
+  width: 300px;
+  padding-bottom: 20px;
+}
+
+.header-link {
+  color: #000;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.header-logo {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.header-logo-small {
+  width: 50px;
+}
+
+.about-section {
+  justify-content: space-around;
+  width: 100%;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: flex;
+  overflow: hidden;
+}
+
+.section-image {
+  width: 40%;
+}
+
+.about-text {
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.landing-button {
+  background-color: #000;
+  border-radius: 20px;
+  padding: 10px 30px;
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.tokenomics {
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+}
+
+.section-block {
+  flex-flow: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 40%;
+  display: flex;
+}
+
+.section-heading {
+  margin-top: 0;
+  font-size: 40px;
+}
+
+.community-section {
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  display: flex;
+}
+
+.community-headimng {
+  text-align: center;
+  margin-top: 0;
+  font-size: 40px;
+}
+
+.trustmebro-icons {
+  border: 3px solid #000;
+  border-width: 3px 0;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.trustmebro-text, .trustmebro-text-mobile-none {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 10px;
+  font-size: 40px;
+}
+
+.mobile-nav, .mobile-navbar-button {
+  display: none;
+}
+
+.chart {
+  width: 30%;
+  position: absolute;
+  inset: auto 0% 0% auto;
+}
+
+.disclaimer-section {
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  display: flex;
+}
+
+.disclaimer-block {
+  border: 2px solid #000;
+  border-radius: 20px;
+}
+
+.text-block {
+  padding: 20px;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+@media screen and (max-width: 479px) {
+  .main-wrapper {
+    width: 100svw;
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  .header {
+    flex-flow: row;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .footer {
+    flex-flow: column;
+  }
+
+  .landing-section {
+    height: auto;
+    padding-top: 100px;
+  }
+
+  .footer-logo {
+    padding-bottom: 20px;
+  }
+
+  .footer-description {
+    width: 90%;
+    padding-bottom: 40px;
+  }
+
+  .landing-heading {
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  .header-link {
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 16px;
+  }
+
+  .header-links {
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    display: none;
+  }
+
+  .about-section {
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+  }
+
+  .section-image {
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .about-text {
+    text-align: center;
+  }
+
+  .tokenomics {
+    flex-flow: column-reverse;
+  }
+
+  .section-block {
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    padding-bottom: 40px;
+  }
+
+  .section-heading {
+    font-size: 30px;
+  }
+
+  .community-headimng {
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  .trustmebro-text {
+    padding: 5px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .trustmebro-text-mobile-none {
+    padding: 5px;
+    font-size: 16px;
+    line-height: 24px;
+    display: none;
+  }
+
+  .mobile-nav {
+    z-index: 1;
+    background-color: #fff;
+    flex-flow: column;
+    flex: 0 auto;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    position: fixed;
+    inset: 0% 0% 0% 0;
+  }
+
+  .mobile-navbar-links {
+    color: #000;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 30px;
+    line-height: 35px;
+    text-decoration: none;
+  }
+
+  .mobile-navbar-button {
+    z-index: 2;
+    cursor: pointer;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 25px;
+    height: 20px;
+    display: flex;
+    position: relative;
+  }
+
+  .line {
+    background-color: #000;
+    height: 3px;
+    padding-bottom: 0;
+    padding-right: 0;
+  }
+
+  .chart {
+    width: 90%;
+    position: relative;
+  }
+
+  .disclaimer-section {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .text-block {
+    text-align: center;
+  }
+}
+
+
