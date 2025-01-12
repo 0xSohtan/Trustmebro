@@ -104,6 +104,11 @@
   text-decoration: none;
 }
 
+.header-link:hover {
+  color: #fff;
+  background-color: #000;
+}
+
 .header-logo {
   justify-content: center;
   align-items: center;
@@ -220,6 +225,21 @@
   padding: 20px;
   font-size: 20px;
   line-height: 24px;
+}
+
+.cursor-wrapper {
+  z-index: 100;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: fixed;
+  inset: 0%;
+}
+
+.cursor {
+  width: 30px;
+  height: 30px;
+  transition: opacity .3s;
 }
 
 @media screen and (max-width: 479px) {
